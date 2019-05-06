@@ -6,7 +6,6 @@ public class Position {
 	private int column;
 	
 	public Position() {
-		
 	}
 	
 	public Position(int row, int column) {
@@ -28,6 +27,11 @@ public class Position {
 
 	public void setColumn(int column) {
 		this.column = column;
+	}
+
+	@Override
+	public String toString() {
+		return row + ", " + column;
 	}
 	
 	
